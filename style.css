@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&family=Overpass:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  display: flex;
+  width: 70rem;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.image-box {
+  flex: 100%;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.heading {
+  margin: 2rem 2rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  /* color: hsl(214, 17%, 51%); */
+  color: hsl(217, 19%, 35%);
+}
+
+.paragraph {
+  color: hsl(212, 23%, 69%);
+  font-size: 1.4rem;
+  margin: 2rem 2rem;
+}
+
+.author {
+  margin: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.the-author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.the-author img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.author-name {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: hsl(217, 19%, 35%);
+}
+
+.author-date {
+  font-size: 1.4rem;
+  color: hsl(212, 23%, 69%);
+}
+
+.share {
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  transition: all 0.5s;
+  background-color: hsl(212, 23%, 69%);
+}
+
+.socials {
+  width: 20rem;
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: relative;
+  top: -119px;
+  left: 23%;
+}
+
+.socials span {
+  color: hsl(210, 46%, 95%);
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}

@@ -89,6 +89,10 @@ body {
   background-color: hsl(212, 23%, 69%);
 }
 
+.share:hover {
+  background-color: hsl(217, 19%, 35%);
+}
+
 .socials {
   transition: all 0.5s;
   width: 20rem;

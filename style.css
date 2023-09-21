@@ -80,6 +80,7 @@ body {
 }
 
 .share {
+  cursor: pointer;
   border: none;
   width: 4rem;
   height: 4rem;
@@ -89,16 +90,18 @@ body {
 }
 
 .socials {
+  transition: all 0.5s;
   width: 20rem;
   background-color: hsl(217, 19%, 35%);
   display: flex;
   justify-content: center;
   gap: 2rem;
+  border-radius: 0.9rem;
   align-items: center;
   padding: 1rem 2rem;
+  transform: translateY(-12rem);
+  left: 31rem;
   position: relative;
-  top: -119px;
-  left: 23%;
 }
 
 .socials span {
@@ -107,8 +110,58 @@ body {
   letter-spacing: 0.1rem;
   text-transform: uppercase;
   font-weight: 500;
+  /* z-index: 10; */
 }
 
 .hidden {
+  transition: all 0.5s;
   display: none;
+}
+
+@media only screen and (max-width: 980px) {
+  .container {
+    flex-direction: column;
+    width: 50rem;
+    margin-bottom: 3rem;
+  }
+  .heading {
+    margin-top: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .paragraph {
+    margin-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 2rem;
+  }
+  .socials {
+    transform: translateY(-3rem);
+    left: 0;
+    width: 50rem;
+    border-radius: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    width: 30rem;
+  }
+  .heading {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.9rem;
+  }
+  .paragraph {
+    margin-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+  }
+  .socials {
+    width: 30rem;
+  }
 }

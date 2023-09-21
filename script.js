@@ -7,6 +7,7 @@ share.addEventListener("click", function () {
 
   share.style.backgroundColor = "hsl(217, 19%, 35%)";
   // document.querySelector(".share").classList.toggle("hidden");
-  share.classList.toggle("color");
+  // share.classList.toggle("color");
   hidden.classList.toggle("hidden");
+  document.querySelector(".container").style.marginTop = "2rem";
 });
